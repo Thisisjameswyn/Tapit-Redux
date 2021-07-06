@@ -4,24 +4,28 @@ import PropTypes from "prop-types";
 
 
 
-function KegList()
+function KegList(props)
 {
   return (
     <React.Fragment>
       <hr />
-      {props.kegList.map((keg, index) =>
-        <Keg name={keg.name}
+      {props.kegList.map((keg) =>
+      <Keg
+          whenKegClicked = { props.onKegSelection }
+          names={keg.names}
           brand={keg.brand}
           price={keg.price}
           alcohol={keg.alcohol}
-          key={index} />
+          id={keg.id}
+          key={keg.id}/>
       )}
     </React.Fragment>
   );
 }
 
 KegList.propTypes = {
-  kegList: PropTypes.array
+  kegList: PropTypes.array,
+  onKegSelection: PropTypes.func
 };
 
 export default KegList;
