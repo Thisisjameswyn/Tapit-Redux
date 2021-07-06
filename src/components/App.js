@@ -6,7 +6,7 @@ function App()
 {
   return (
     <React.Fragment>
-      <h1>Check check chek it</h1>
+      <h1>It's a tap room!</h1>
       <Header />
       <KegControl />
     </React.Fragment>
