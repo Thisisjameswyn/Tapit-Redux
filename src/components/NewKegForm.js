@@ -8,14 +8,14 @@ function NewKegForm(props)
   function handleNewKegFormSubmission(event)
   {
     event.preventDefault();
-    props.onNewKegCreation({ names: event.target.names.value, location: event.target.location.value, issue: event.target.issue.value, id: v4() });
+    props.onNewKegCreation({ name: event.target.name.value, brand: event.target.brand.value, price: event.target.price.value, id: v4() });
   }
   return (
     <React.Fragment>
       <form onSubmit={handleNewKegFormSubmission}>
         <input
           type='text'
-          name='names'
+          name='name'
           placeholder='Keg name' />
         <input
           type='text'
