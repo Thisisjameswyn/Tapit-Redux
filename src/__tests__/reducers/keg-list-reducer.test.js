@@ -2,6 +2,23 @@ import kegListReducer from "../../reducers/keg-list-reducer";
 
 describe("kegListReducer", () =>
 {
+  const currentState = {
+    1: {
+      name: "RPM",
+      brand: "Boneyard",
+      price: "5",
+      alcohol: "7.2",
+      id: 1
+    },
+    2: {
+      names: "Outburst",
+      brand: "Pyramid",
+      price: "3",
+      alcohol: "8.6",
+      id: 2
+    }
+  }
+
   let action;
   const kegData = {
     name: "RPM",
@@ -38,4 +55,21 @@ describe("kegListReducer", () =>
   {
     expect(kegListReducer({}, { type: null })).toEqual({})
   });
+
+  test("Should successfully delete a keg", () =>
+  {
+    action = {
+      type: "DELETE_KEG",
+      id: 1
+    };
+    expect(kegListReducer(currentState, action)).toEqual({
+      2: {
+        names: "Outburst",
+        brand: "Pyramid",
+        price: "3",
+        alcohol: "8.6",
+        id: 2
+      }
+    })
+  })
 });
