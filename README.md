@@ -1,11 +1,11 @@
 # _Tap Room_
 
-#### _A react built tap room_
+#### _A React built tap room now featuring Redux_
 
 #### By _James Wyn_
 
 ## Description
-This little program allows users to add, sell and remove kegs of beer from a tap room
+This little program allows users to add, sell and remove kegs of beer from a tap room - now with React implementation
 
 ## Component Diagram
 
@@ -14,7 +14,7 @@ This little program allows users to add, sell and remove kegs of beer from a tap
 ## Setup and Use
 
 ### Installation
-1. Clone the repository: `$ git clone https://github.com/Thisisjameswyn/Tapit`
+1. Clone the repository: `$ git clone https://github.com/Thisisjameswyn/Tapit-Redux`
 2. Install node modules with `$ npm install`
 
 ### Build and Run
@@ -26,6 +26,7 @@ There were no bugs found
 
 ## Technologies Used
 * React
+* Redux
 * JS
 
 ### License
