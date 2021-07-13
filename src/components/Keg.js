@@ -11,6 +11,7 @@ function Keg(props)
         <p>Made by: {props.brand}</p>
         <p>Pint price: {props.price}</p>
         <p>ABV: {props.alcohol}</p>
+        <p>Capacity: {props.pints} pints</p>
       </div>
       <hr />
     </React.Fragment>

@@ -1,6 +1,6 @@
 export default (state = {}, action) =>
 {
-  const { name, brand, price, alcohol, id } = action;
+  const { name, brand, price, alcohol, id, pints } = action;
   switch (action.type)
   {
     case "ADD_KEG":
@@ -10,6 +10,7 @@ export default (state = {}, action) =>
           brand: brand,
           price: price,
           alcohol: alcohol,
+          pints: pints,
           id: id
         }
       });
