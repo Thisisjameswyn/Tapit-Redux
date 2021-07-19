@@ -112,6 +112,10 @@ describe("kegListReducer", () =>
 1. Use `$ npm run start` to start the server.
 2. It should autmoatically open the corrent site, but if it doesn't navigate to http://localhost:3000
 
+### Run Tests
+1. Use `$ npm run test` to start the unit tests
+2. All test suites should run automatically
+
 ## Known Bugs
 There were no bugs found
 
